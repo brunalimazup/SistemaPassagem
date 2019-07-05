@@ -11,7 +11,6 @@ public class passagensModel {
 	}
 	
 	public passagensModel(String nome, String email, int idade, int quantidadeMalas) {
-		super();
 		this.nome = nome;
 		this.email = email;
 		this.idade = idade;
