@@ -1,5 +1,7 @@
 package br.com.passagens.models;
 
+import java.util.List;
+
 public class OnibusModel {
 
 	private String empresa;
@@ -7,7 +9,7 @@ public class OnibusModel {
 	private String tempoDeViagem;
 	private int lugares;
 	private boolean lugaresDisponiveis;
-//	private List<PassagensModel> cliente;
+	private List<PassagensModel> cliente;
 
 	public OnibusModel() {
 	}
@@ -19,7 +21,7 @@ public class OnibusModel {
 		this.tempoDeViagem = tempoDeViagem;
 		this.lugares = lugares;
 		this.lugaresDisponiveis = lugaresDisponiveis;
-//		this.cliente = cliente;
+		this.cliente = cliente;
 	}
 
 	public String getEmpresa() {
@@ -62,13 +64,13 @@ public class OnibusModel {
 		this.lugaresDisponiveis = lugaresDisponiveis;
 	}
 
-//	public List<PassagensModel> getCliente() {
-//		return cliente;
-//	}
-//
-//	public void setCliente(List<PassagensModel> cliente) {
-//		this.cliente = cliente;
-//	}
+	public List<PassagensModel> getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(List<PassagensModel> cliente) {
+		this.cliente = cliente;
+	}
 
 	@Override
 	public String toString() {

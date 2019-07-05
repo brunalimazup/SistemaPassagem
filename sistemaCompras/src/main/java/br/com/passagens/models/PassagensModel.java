@@ -1,16 +1,16 @@
 package br.com.passagens.models;
 
-public class passagensModel {
+public class PassagensModel {
 	
 	private String nome;
 	private String email;
 	private int idade;
 	private int quantidadeMalas;
 	
-	public passagensModel() {
+	public PassagensModel() {
 	}
 	
-	public passagensModel(String nome, String email, int idade, int quantidadeMalas) {
+	public PassagensModel(String nome, String email, int idade, int quantidadeMalas) {
 		this.nome = nome;
 		this.email = email;
 		this.idade = idade;
