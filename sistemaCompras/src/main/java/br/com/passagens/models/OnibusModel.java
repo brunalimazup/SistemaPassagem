@@ -14,7 +14,6 @@ public class OnibusModel {
 
 	public OnibusModel(String empresa, String destino, String tempoDeViagem, int lugares, boolean lugaresDisponiveis,
 			List<PassagensModel> cliente) {
-		super();
 		this.empresa = empresa;
 		this.destino = destino;
 		this.tempoDeViagem = tempoDeViagem;
