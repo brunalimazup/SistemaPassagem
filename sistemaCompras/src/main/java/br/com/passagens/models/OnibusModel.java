@@ -14,14 +14,11 @@ public class OnibusModel {
 	public OnibusModel() {
 	}
 
-	public OnibusModel(String empresa, String destino, String tempoDeViagem, int lugares, boolean lugaresDisponiveis,
-			List<PassagensModel> cliente) {
+	public OnibusModel(String empresa, String destino, String tempoDeViagem, int lugares) {
 		this.empresa = empresa;
 		this.destino = destino;
 		this.tempoDeViagem = tempoDeViagem;
 		this.lugares = lugares;
-		this.lugaresDisponiveis = lugaresDisponiveis;
-		this.cliente = cliente;
 	}
 
 	public String getEmpresa() {
