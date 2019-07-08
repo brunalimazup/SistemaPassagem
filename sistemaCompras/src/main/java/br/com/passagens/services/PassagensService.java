@@ -26,7 +26,7 @@ public class PassagensService {
 		}
 	}
 
-	private Collection<OnibusModel> mostrarEmpresas() {
+	public Collection<OnibusModel> mostrarEmpresas() {
 		return this.onibus;
 	}
 
@@ -39,5 +39,8 @@ public class PassagensService {
 		}
 		return resposta;
 	}
-
+	
+	private Collection <OnibusModel> mostrarlista(){
+		return this.onibus;
+	}
 }
