@@ -8,17 +8,19 @@ public class OnibusModel {
 	private String destino;
 	private String tempoDeViagem;
 	private int lugares;
-	private boolean lugaresDisponiveis;
+	private List<String> lugaresDisponiveis;
 	private List<PassagensModel> cliente;
 
 	public OnibusModel() {
 	}
 
-	public OnibusModel(String empresa, String destino, String tempoDeViagem, int lugares) {
+	public OnibusModel(String empresa, String destino, String tempoDeViagem, int lugares,
+			List<String> lugaresDisponiveis) {
 		this.empresa = empresa;
 		this.destino = destino;
 		this.tempoDeViagem = tempoDeViagem;
 		this.lugares = lugares;
+		this.lugaresDisponiveis = lugaresDisponiveis;
 	}
 
 	public String getEmpresa() {
@@ -53,11 +55,11 @@ public class OnibusModel {
 		this.lugares = lugares;
 	}
 
-	public boolean isLugaresDisponiveis() {
+	public List<String> getLugaresDisponiveis() {
 		return lugaresDisponiveis;
 	}
 
-	public void setLugaresDisponiveis(boolean lugaresDisponiveis) {
+	public void setLugaresDisponiveis(List<String> lugaresDisponiveis) {
 		this.lugaresDisponiveis = lugaresDisponiveis;
 	}
 
@@ -79,7 +81,6 @@ public class OnibusModel {
 		modelo.append("TempoDeViagem" + this.tempoDeViagem);
 		modelo.append("Lugares" + this.lugares);
 		modelo.append("Quantidade de lugares" + this.lugares);
-		modelo.append("Vazio" + this.isLugaresDisponiveis());
 
 		return modelo.toString();
 	}

@@ -2,7 +2,10 @@ package br.com.passagens.services;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 import org.springframework.stereotype.Service;
 
 import br.com.passagens.models.OnibusModel;
@@ -18,26 +21,45 @@ public class PassagensService {
 		}
 	};
 
-	private List<OnibusModel> onibus = new ArrayList<OnibusModel>();
+	private List<String> cometaLugares = new ArrayList<String>();
+	private List<String> EstrelaLugares = new ArrayList<String>();
+
+	private Map<Integer, OnibusModel> onibus = new HashMap<Integer, OnibusModel>();
 	{
 		{
-			onibus.add(new OnibusModel("Cometa", "Rio", "2 horas", 20));
-			onibus.add(new OnibusModel("Estrela", "Santos", "1 hora e 30 minutos", 20));
+			onibus.put(1, new OnibusModel("Cometa", "Rio", "2 horas", 20, cometaLugares));
+			onibus.put(2, new OnibusModel("Estrela", "Santos", "1 hora e 30 minutos", 20, EstrelaLugares));
 		}
 	}
 
 	public Collection<OnibusModel> mostrarEmpresas() {
-		return this.onibus;
+		return this.onibus.values();
 	}
 
 	public String salvarCompra(PassagensModel passagensModel) {
-		String resposta = "Compra realizada.";
+		String resposta;
 		if (passagensModel.getIdade() >= 18) {
 			clientes.add(passagensModel);
-		} else {
-			resposta = "Você não possue idade para realizar essa compra.";
+			resposta = "redirect:\"";
+		} else{
+			resposta = "redirect:error.html";
 		}
 		return resposta;
 	}
 
+	public void criarLugaresCometa() {
+		for (int i = 0; i < onibus.get(1).getLugares(); i++) {
+			cometaLugares.add("C" + i);
+		}
+	}
+
+	public void criarLugatesEstrela() {
+		for (int i = 0; i < onibus.get(2).getLugares(); i++) {
+			cometaLugares.add("E" + i);
+		}
+	}
+
+	public List<String> mostrarlista() {
+		return this.cometaLugares;
+	}
 }
