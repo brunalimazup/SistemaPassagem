@@ -26,7 +26,7 @@ public class PassagensService {
 		}
 	}
 
-	private Collection<OnibusModel> mostrarEmpresas() {
+	public Collection<OnibusModel> mostrarEmpresas() {
 		return this.onibus;
 	}
 

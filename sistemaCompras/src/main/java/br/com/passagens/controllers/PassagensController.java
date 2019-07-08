@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import br.com.passagens.models.OnibusModel;
 import br.com.passagens.models.PassagensModel;
 import br.com.passagens.services.PassagensService;
 
@@ -15,10 +16,10 @@ public class PassagensController {
 	@Autowired
 	PassagensService passagensService;
 
-	@GetMapping
+	@GetMapping ("/")
 	public ModelAndView mostarEmpresas() {
 		ModelAndView modelAndView = new ModelAndView("Onibus.html");
-		modelAndView.addObject("", "");
+		modelAndView.addObject("onibus", passagensService.mostrarEmpresas());
 		return modelAndView;
 	}
 
