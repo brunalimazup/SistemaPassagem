@@ -1,6 +1,5 @@
 package br.com.passagens.controllers;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,8 +23,8 @@ public class PassagensController {
 	}
 
 	@PostMapping("/compra")
-	public void SalvarCadastro(PassagensModel passagensModel) {
-		passagensService.salvarCompra(passagensModel);
+	public String SalvarCadastro(PassagensModel passagensModel) {
+		return passagensService.salvarCompra(passagensModel);
 	}
 
 	@GetMapping("/compra")
@@ -35,4 +34,16 @@ public class PassagensController {
 
 	}
 
+	@GetMapping("/erro")
+	public ModelAndView mostrarErro() {
+		ModelAndView modelAndView = new ModelAndView("erro.html");
+		return modelAndView;
+	}
+	
+	@GetMapping("/sucesso")
+	public ModelAndView mostrarSucesso() {
+		ModelAndView modelAndView = new ModelAndView("sucesso.html");
+		return modelAndView;
+	}
+	
 }

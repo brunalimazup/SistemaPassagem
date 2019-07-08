@@ -40,9 +40,9 @@ public class PassagensService {
 		String resposta;
 		if (passagensModel.getIdade() >= 18) {
 			clientes.add(passagensModel);
-			resposta = "redirect:\"";
+			resposta = "redirect:/sucesso";
 		} else{
-			resposta = "redirect:error.html";
+			resposta = "redirect:/erro";
 		}
 		return resposta;
 	}
