@@ -33,5 +33,6 @@ public class PassagensController {
 		ModelAndView modelAndView = new ModelAndView("cadastro.html");
 		return modelAndView;
 
-}
+	}
+
 }
