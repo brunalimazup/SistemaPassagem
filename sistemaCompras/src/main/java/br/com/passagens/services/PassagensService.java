@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 import org.springframework.stereotype.Service;
 
@@ -15,20 +16,13 @@ import br.com.passagens.models.PassagensModel;
 public class PassagensService {
 
 	private List<PassagensModel> clientes = new ArrayList<PassagensModel>();
-	{
-		{
-			clientes.add(new PassagensModel("Milena", "email", 20, 2));
-		}
-	};
-
-	private List<String> cometaLugares = new ArrayList<String>();
-	private List<String> EstrelaLugares = new ArrayList<String>();
+	private Random aleatorio = new Random();
 
 	private Map<Integer, OnibusModel> onibus = new HashMap<Integer, OnibusModel>();
 	{
 		{
-			onibus.put(1, new OnibusModel("Cometa", "Rio", "2 horas", 20, cometaLugares));
-			onibus.put(2, new OnibusModel("Estrela", "Santos", "1 hora e 30 minutos", 20, EstrelaLugares));
+			onibus.put(1, new OnibusModel("Cometa", "Rio", "2 horas", 20, 20));
+			onibus.put(2, new OnibusModel("Estrela", "Santos", "1 hora e 30 minutos", 20, 20));
 		}
 	}
 
@@ -41,25 +35,21 @@ public class PassagensService {
 		if (passagensModel.getIdade() >= 18) {
 			clientes.add(passagensModel);
 			resposta = "redirect:/sucesso";
-		} else{
+		} else {
 			resposta = "redirect:/erro";
 		}
+
+		if (resposta == "redirect:/sucesso") {
+			if (passagensModel.getDestino().equalsIgnoreCase("Rio")) {
+				onibus.get(1).setLugaresDisponiveis(onibus.get(1).getLugares() - 1);
+			} else if (passagensModel.getDestino().equalsIgnoreCase("Santos")) {
+				onibus.get(2).setLugaresDisponiveis(onibus.get(1).getLugares() - 1);
+			} else {
+				resposta = "redirect:/erro";
+			}
+		}
+
 		return resposta;
 	}
 
-	public void criarLugaresCometa() {
-		for (int i = 0; i < onibus.get(1).getLugares(); i++) {
-			cometaLugares.add("C" + i);
-		}
-	}
-
-	public void criarLugatesEstrela() {
-		for (int i = 0; i < onibus.get(2).getLugares(); i++) {
-			cometaLugares.add("E" + i);
-		}
-	}
-
-	public List<String> mostrarlista() {
-		return this.cometaLugares;
-	}
 }

@@ -8,14 +8,13 @@ public class OnibusModel {
 	private String destino;
 	private String tempoDeViagem;
 	private int lugares;
-	private List<String> lugaresDisponiveis;
+	private int lugaresDisponiveis;
 	private List<PassagensModel> cliente;
 
 	public OnibusModel() {
 	}
 
-	public OnibusModel(String empresa, String destino, String tempoDeViagem, int lugares,
-			List<String> lugaresDisponiveis) {
+	public OnibusModel(String empresa, String destino, String tempoDeViagem, int lugares, int lugaresDisponiveis) {
 		this.empresa = empresa;
 		this.destino = destino;
 		this.tempoDeViagem = tempoDeViagem;
@@ -55,11 +54,11 @@ public class OnibusModel {
 		this.lugares = lugares;
 	}
 
-	public List<String> getLugaresDisponiveis() {
+	public int getLugaresDisponiveis() {
 		return lugaresDisponiveis;
 	}
 
-	public void setLugaresDisponiveis(List<String> lugaresDisponiveis) {
+	public void setLugaresDisponiveis (int lugaresDisponiveis) {
 		this.lugaresDisponiveis = lugaresDisponiveis;
 	}
 
