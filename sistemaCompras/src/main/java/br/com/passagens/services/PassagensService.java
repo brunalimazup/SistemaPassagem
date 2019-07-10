@@ -21,8 +21,8 @@ public class PassagensService {
 	private Map<Integer, OnibusModel> onibus = new HashMap<Integer, OnibusModel>();
 	{
 		{
-			onibus.put(1, new OnibusModel("Cometa", "Rio", "2 horas", 20, 20));
-			onibus.put(2, new OnibusModel("Estrela", "Santos", "1 hora e 30 minutos", 20, 20));
+			onibus.put(1, new OnibusModel("Empresa: Cometa", "Destino: Rio de Janeiro", "Duração: 2 horas de viagem.", 20, 20));
+			onibus.put(2, new OnibusModel("Empresa: Estrela", "Destino: Santos", "Duração: 1 hora e 30 minutos de viagem.", 20, 20));
 		}
 	}
 
