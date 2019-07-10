@@ -10,16 +10,18 @@ public class OnibusModel {
 	private int lugares;
 	private int lugaresDisponiveis;
 	private List<PassagensModel> cliente;
+	private String esgotado;
 
 	public OnibusModel() {
 	}
 
-	public OnibusModel(String empresa, String destino, String tempoDeViagem, int lugares, int lugaresDisponiveis) {
+	public OnibusModel(String empresa, String destino, String tempoDeViagem, int lugares, int lugaresDisponiveis,String esgotado) {
 		this.empresa = empresa;
 		this.destino = destino;
 		this.tempoDeViagem = tempoDeViagem;
 		this.lugares = lugares;
 		this.lugaresDisponiveis = lugaresDisponiveis;
+		this.esgotado = esgotado;
 	}
 
 	public String getEmpresa() {
@@ -58,7 +60,7 @@ public class OnibusModel {
 		return lugaresDisponiveis;
 	}
 
-	public void setLugaresDisponiveis (int lugaresDisponiveis) {
+	public void setLugaresDisponiveis(int lugaresDisponiveis) {
 		this.lugaresDisponiveis = lugaresDisponiveis;
 	}
 
@@ -68,6 +70,14 @@ public class OnibusModel {
 
 	public void setCliente(List<PassagensModel> cliente) {
 		this.cliente = cliente;
+	}
+
+	public String getEsgotado() {
+		return esgotado;
+	}
+
+	public void setEsgotado(String esgotado) {
+		this.esgotado = esgotado;
 	}
 
 	@Override

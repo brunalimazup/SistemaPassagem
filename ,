@@ -1,0 +1,201 @@
+[33mcommit e84be3ffc6e2976c95ff3c95344970c54d540b04[m[33m ([m[1;36mHEAD -> [m[1;32mlogica[m[33m, [m[1;31morigin/logica[m[33m)[m
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Mon Jul 8 21:12:41 2019 -0300
+
+    adicionar parte da logica
+
+[33mcommit d3d086b2c26c6badecaa68b0d1c4a7b2d289149f[m
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Mon Jul 8 20:29:42 2019 -0300
+
+    soluciona erro
+
+[33mcommit 2f658de92df867440bd3563c4a7872e2e494f042[m
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Mon Jul 8 16:35:23 2019 -0300
+
+    Adicionar parte da logica
+
+[33mcommit ae94fc3a4a8c875643e4c4a6d815c2ccbb3e5788[m
+Merge: d28a074 49bbcc4
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Mon Jul 8 16:33:05 2019 -0300
+
+    Merge branch 'master' of github.com:brunamlzupper/SistemaPassagem into logicaCompra
+
+[33mcommit 49bbcc4332663a6ba9d1c663362bc87b84f6d2ef[m
+Merge: 44b4074 8505ace
+Author: MilenaFigueredo <50598193+MilenaFigueredo@users.noreply.github.com>
+Date:   Mon Jul 8 16:32:49 2019 -0300
+
+    Merge pull request #8 from brunamlzupper/htmlHome
+    
+    atualizar html e css das paginas
+
+[33mcommit 8505ace4a53088da81451fd8f0dd55696ac9724d[m
+Author: Bruna <bruna.lima@zup.com.br>
+Date:   Mon Jul 8 16:28:28 2019 -0300
+
+    atualizar html e css das paginas
+
+[33mcommit d28a074a7c53ced9522046c5ef347d85c684edd5[m
+Merge: 1e7fcb7 44b4074
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Mon Jul 8 15:38:57 2019 -0300
+
+    Merge branch 'master' of github.com:brunamlzupper/SistemaPassagem into logicaCompra
+
+[33mcommit 44b4074c4aaeae0a660e02900669fb1ec4e461f2[m
+Merge: da53664 5c9b329
+Author: MilenaFigueredo <50598193+MilenaFigueredo@users.noreply.github.com>
+Date:   Mon Jul 8 15:37:25 2019 -0300
+
+    Merge pull request #7 from brunamlzupper/htmlHome
+    
+    Adicionar css no html da pagina
+
+[33mcommit 5c9b329fa9fc2e8fe9b6de11fb195ae8b9aad572[m
+Author: Bruna <bruna.lima@zup.com.br>
+Date:   Mon Jul 8 15:25:01 2019 -0300
+
+    Adicionar css no html da pagina
+
+[33mcommit 1e7fcb725e6fe8c92937f1b34fbc53f1cc73a51e[m
+Merge: 5643cbe da53664
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Mon Jul 8 14:21:47 2019 -0300
+
+    Merge branch 'master' of github.com:brunamlzupper/SistemaPassagem into logicaCompra
+
+[33mcommit 5643cbe44beb8eeb0a788d90c5ab21ace450cd1a[m
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Mon Jul 8 14:21:27 2019 -0300
+
+    adicionar mudanças na classe
+
+[33mcommit da536642edc612fd48729e8a881965dcf430c5c7[m
+Merge: 245caea 1fb77bc
+Author: MilenaFigueredo <50598193+MilenaFigueredo@users.noreply.github.com>
+Date:   Mon Jul 8 14:14:31 2019 -0300
+
+    Merge pull request #6 from brunamlzupper/htmlHome
+    
+    Serve para inserir o html das classes
+
+[33mcommit 1fb77bc8162c2c3f1c8b447fa3ac1190efbbc245[m
+Author: Bruna <bruna.lima@zup.com.br>
+Date:   Mon Jul 8 14:10:37 2019 -0300
+
+    Serve para inserir o html das classes
+
+[33mcommit 245caeae948e927d3b79849df2186d31844a3749[m
+Merge: 6776ef6 9ee3e23
+Author: brunamlzupper <50598210+brunamlzupper@users.noreply.github.com>
+Date:   Mon Jul 8 11:59:27 2019 -0300
+
+    Merge pull request #5 from brunamlzupper/logicaCompra
+    
+    Adicionar logica da compra das passagens
+
+[33mcommit 9ee3e23671ccd848fe71d7b0c0fa4dde8c879821[m
+Merge: 94a3827 a5aebce
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Mon Jul 8 11:45:41 2019 -0300
+
+    Resolução de conflito
+
+[33mcommit 94a382742f58617f77b923d0849195707d0e9e2a[m
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Mon Jul 8 11:39:22 2019 -0300
+
+    Adicionar correção na logica de compra
+
+[33mcommit a5aebceff2a5d22377457179954089ea5fa2b661[m
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Sat Jul 6 20:20:22 2019 -0300
+
+    Adicionar logica da compra das passagens
+
+[33mcommit 6776ef6130293312fdf022b99aa8719111bc5784[m
+Merge: ff7adad d2de903
+Author: MilenaFigueredo <50598193+MilenaFigueredo@users.noreply.github.com>
+Date:   Fri Jul 5 19:29:00 2019 -0300
+
+    Merge pull request #4 from brunamlzupper/check-in
+    
+    Adicionar html do cadastro
+
+[33mcommit d2de90394f2eb2ff28fe08babc5173c30d8d4c57[m[33m ([m[1;31morigin/check-in[m[33m)[m
+Author: Bruna <bruna.lima@zup.com.br>
+Date:   Fri Jul 5 19:27:42 2019 -0300
+
+    Adicionar endereço xmlns
+
+[33mcommit 7cace6373eada507cf54392641a2efd82a0f875c[m
+Author: Bruna <bruna.lima@zup.com.br>
+Date:   Fri Jul 5 19:22:28 2019 -0300
+
+    Adicionar html do cadastro
+
+[33mcommit ff7adad7470153e824ce01b028fa8f51e1ff4df1[m
+Merge: f187978 66b72a1
+Author: MilenaFigueredo <50598193+MilenaFigueredo@users.noreply.github.com>
+Date:   Fri Jul 5 18:46:44 2019 -0300
+
+    Merge pull request #3 from brunamlzupper/correcao
+    
+    Correcao de nomes do codigo
+
+[33mcommit 66b72a10f79136d18d463940364fcc9c5f500f9e[m
+Author: Bruna <bruna.lima@zup.com.br>
+Date:   Fri Jul 5 18:44:21 2019 -0300
+
+    Correcao de nomes do codigo
+
+[33mcommit f18797825a147b4ae1c42ea1ef6b4004b11cafda[m
+Merge: b347463 cc56875
+Author: brunamlzupper <50598210+brunamlzupper@users.noreply.github.com>
+Date:   Fri Jul 5 18:33:16 2019 -0300
+
+    Merge pull request #2 from brunamlzupper/modeloOnibus
+    
+    Adicionar modelo de onibus
+
+[33mcommit b34746371984249a9dce40b185d85b567aa4a737[m
+Merge: 377df9c 30d2e96
+Author: MilenaFigueredo <50598193+MilenaFigueredo@users.noreply.github.com>
+Date:   Fri Jul 5 18:32:53 2019 -0300
+
+    Merge pull request #1 from brunamlzupper/cadastroClientes
+    
+    Adicionar Modelo de cadastro
+
+[33mcommit 30d2e969c0cb5764fda3d14a756c876a0e770a45[m
+Author: Bruna <bruna.lima@zup.com.br>
+Date:   Fri Jul 5 18:27:32 2019 -0300
+
+    Correção da classe passagensModel
+
+[33mcommit cc5687502b508d2ed7d7368941791777a7164294[m
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Fri Jul 5 18:21:15 2019 -0300
+
+    Adicionar correção na classe onibusModel
+
+[33mcommit 1c4cf4a8a4312df48061f6c94a777a4b6a4d2067[m
+Author: Milena Figueredo <milena.silva@zup.com.br>
+Date:   Fri Jul 5 18:13:18 2019 -0300
+
+    Adicionar modelo de onibus
+
+[33mcommit b476030b631d6d07f3ddbecdb010e6f43e28b1c3[m
+Author: Bruna <bruna.lima@zup.com.br>
+Date:   Fri Jul 5 18:09:34 2019 -0300
+
+    Adicionar Modelo de cadastro
+
+[33mcommit 377df9cc5e0f694a5e6fed3eb3e2700894eb358e[m
+Author: Bruna <bruna.lima@zup.com.br>
+Date:   Fri Jul 5 17:26:10 2019 -0300
+
+    Adicionar a estrutura do projeto
